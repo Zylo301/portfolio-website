@@ -3,110 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lean Mele - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Lean Mele | IT Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="cursor-follower"></div>
+    
     <header>
+        <div class="logo">LM</div>
         <nav>
             <ul>
-                <li><a href="#start">Start</a></li>
-                <li><a href="#projekte">Projekte</a></li>
-                <li><a href="#kenntnisse">Kenntnisse</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#start" class="nav-link">Start</a></li>
+                <li><a href="#projekte" class="nav-link">Projekte</a></li>
+                <li><a href="#kenntnisse" class="nav-link">Kenntnisse</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
             </ul>
         </nav>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
     </header>
 
     <main>
-        <section id="start">
-            <div class="hero-container">
-                <div class="showcase-card" data-tilt>
-                    <div class="card-header">
-                        <div class="color-dot red"></div>
-                        <div class="color-dot yellow"></div>
-                        <div class="color-dot green"></div>
+        <section id="start" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="badge">IT Enthusiast</div>
+                        <h1 class="glitch" data-text="Lean Mele">Lean Mele</h1>
+                        <h2>Softwareentwickler</h2>
+                        <p>Leidenschaftlicher Programmierer mit Fokus auf <span class="highlight">Softwarelösungen </span> und <span class="highlight">Webentwicklung</span></p>
+                        <div class="cta-buttons">
+                            <a href="#projekte" class="btn btn-primary">Meine Projekte</a>
+                            <a href="#kontakt" class="btn btn-secondary">Kontakt</a>
+                        </div>
                     </div>
-                    <img src="images/profile.jpg" alt="Lean Mele Portrait" class="profile-image">
+                        <div class="profile-card">
+                            <div class="card-header">
+                                <div class="color-dot red"></div>
+                                <div class="color-dot yellow"></div>
+                                <div class="color-dot green"></div>
+                            </div>
+                            <div class="profile-image-container">
+                                <img src="images/profile.jpg" alt="Lean Mele Portrait" class="profile-image" onerror="this.src='/placeholder.svg?height=300&width=300'">
+                                <div class="profile-backdrop"></div>
+                            </div>
+  
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-text">
-                    <h1>Lean Mele</h1>
-                    <h2>Softwareentwickler</h2>
-                    <p>Leidenschaftlicher Programmierer mit Fokus auf Webentwicklung und Softwarelösungen</p>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </section>
 
+      
+
         <section id="projekte">
             <h2>Meine Projekte</h2>
             
+            <!-- Todo List Project -->
             <article>
                 <div class="project-content">
-                    <img src="images/todo-app.jpg" alt="ToDo-Liste App Screenshot" class="project-image">
+                    <img src="images/todo-main.jpg" alt="Todo List Main Interface" class="project-image">
+                    
                     <div class="project-text">
-                        <h3>ToDo-Liste Web-Applikation</h3>
-                        <p>Eine responsive Single-Page-Application zur Aufgabenverwaltung</p>
-                        <ul>
-                            <li>Frontend: HTML5, CSS3, JavaScript</li>
-                            <li>Backend: Node.js</li>
-                        </ul>
+                        <h3>ToDo-Liste Android App</h3>
+                        <p>Eine native Android-Applikation zur effizienten Aufgabenverwaltung, entwickelt mit React Native.</p>
                         
+                        <h4>Hauptfunktionen:</h4>
+                        <div class="feature-item">
+                            <span>→</span>
+                            <p>Fokussiertes Produktivitätssystem</p>
+                            <p class="feature-detail">Integration von Kalender und Pomodoro-Timer für effektives Zeitmanagement und bessere Work-Life-Balance</p>
+                        </div>
+                        <div class="feature-item">
+                            <span>→</span>
+                            <p>Digital Wellbeing Konzept</p>
+                            <p class="feature-detail">Alternative zu ablenkenden Social Media Reels durch sinnvolle Aufgabenplanung und Erfolgserlebnisse</p>
+                        </div>
+                        <div class="feature-item">
+                            <span>→</span>
+                            <p>Personalisierte Nutzererfahrung</p>
+                            <p class="feature-detail">Individuelles Profilsystem mit Fortschrittsanalyse und persönlichen Produktivitätsstatistiken</p>
+                        </div>
                     </div>
                 </div>
             </article>
 
+            <!-- Skyland Odyssey Project -->
             <article>
                 <div class="project-content">
-                    <div class="project-gallery">
-                        <img src="images/skyland.jpg" alt="Skyland Odyssey Screenshot" class="project-image">
-                        <div class="gallery-grid">
-                            <img src="images/skyland2.jpg" alt="Skyland Odyssey Additional View" class="gallery-image">
-                            <img src="images/skyland3.jpg" alt="Skyland Odyssey Gameplay" class="gallery-image">
-                            <img src="images/skyland4.jpg" alt="Skyland Odyssey Environment" class="gallery-image">
-                        </div>
-                    </div>
+                    <img src="images/skyland.jpg" alt="Skyland Odyssey" class="project-image">
                     <div class="project-text">
                         <h3>Skyland Odyssey - Meine Reise in die Spieleentwicklung</h3>
                         <p>Tauche ein in die schwebenden Inseln von Skyland Odyssey, einem 3D-Abenteuer, das meine Leidenschaft für Spieleentwicklung widerspiegelt.</p>
                         
                         <div class="project-details">
-                            <div class="journey-description">
-                                <h4>Von der Idee zum virtuellen Universum</h4>
-                                <p>Mit Leidenschaft und Neugierde begann ich dieses Projekt, das sich zu einer fesselnden Reise entwickelte. Jede Zeile Code und jedes 3D-Modell erzählt eine Geschichte von Entdeckung.</p>
-                            </div>
-
                             <div class="technical-highlights">
                                 <h4>Technische Höhepunkte:</h4>
                                 <ul>
                                     <li>Innovative Spielmechanik: Eigenständig in C# entwickelt</li>
-                                    <li>Atemberaubende Visuals: Mit Blender erschuf ich eine einzigartige 3D-Welt</li>
-                                    <li>Physik und Atmosphäre: Realistische Interaktionen und Soundeffekte</li>
-                                    <li>Optimierte Performance: Flüssiges Spielerlebnis auf verschiedenen Systemen</li>
-                                </ul>
-                            </div>
+                                    <li>Schöne Grafik: Mit Blender erschuf ich eine einzigartige 3D-Welt</li>
+                                    <li>Interaktionen und Soundeffekte: Mit Unity und Blender</li>
+                                    <li>Optimierte Performance: Einführung von LOD Systemen,
 
-                            <div class="project-conclusion">
-                                <h4>Mehr als ein Spiel – eine Lernreise</h4>
-                                <p>Skyland Odyssey zeigt meine Fähigkeit, komplexe Projekte zu realisieren. Es ist der Beginn meiner Reise in die Welt der Technologie und Kreativität. Mit Kreativität und Ausdauer können selbst die kühnsten Träume Wirklichkeit werden.</p>
+                                        Verbesserung der Skript-Effizienz,
+                                        Anpassung der Rendereinstellungen</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
 
+            <!-- Custom PC Build Project -->
             <article>
                 <div class="project-content">
-                    <div class="project-gallery">
-                        <img src="images/pc-build1.jpg" alt="Custom PC Build Hauptansicht" class="project-image">
-                        <div class="gallery-grid">
-                            <img src="images/pc-build2.jpg" alt="PC Komponenten" class="gallery-image">
-                            <img src="images/pc-build3.jpg" alt="Fertiger PC mit RGB" class="gallery-image">
-                        </div>
-                    </div>
+                    <img src="images/pc-build1.jpg" alt="Custom PC Build" class="project-image">
                     <div class="project-text">
                         <h3>Custom Gaming PC Build</h3>
-                        <p>Als 13-jähriger Informatiker startete ich mein eigenes PC-Projekt, das sowohl herausfordernd als auch unglaublich lohnend war.</p>
+                        <p>Als 9-jähriger IT Enthusiast startete ich mein eigenes PC-Projekt, das sowohl herausfordernd als auch unglaublich lohnend war.</p>
                         
                         <div class="build-journey">
                             <h4>Meine Build-Journey</h4>
@@ -125,94 +153,141 @@
                                 <p>Erfolgreiche Problemlösung durch BIOS-Anpassungen, Betriebssystem-Setup und Treiber-Installation für einen reibungslosen Betrieb.</p>
                             </div>
                         </div>
-
-                        
-                        <p class="build-conclusion">Der PC-Bau erweiterte nicht nur mein Hardware-Wissen, sondern verbesserte auch meine technischen Fähigkeiten erheblich. Ich nutze den PC bis heute und bin stolz auf das erreichte Ergebnis.</p>
-                    </div>
-                </div>
-            </article>
-
-            <article>
-                <div class="project-content">
-                    <div class="project-text">
-                        <h3>System-Optimierungs-Tools</h3>
-                        <p>Eine Sammlung selbst entwickelter Batch-Skripte zur Automatisierung und Optimierung von Windows-Systemen.</p>
-                        
-                        <div class="project-details">
-                            <h4>Hauptfunktionen:</h4>
-                            <ul>
-                                <li>Automatische Systemreinigung und Wartung</li>
-                                <li>Intelligentes Prozess-Management für bessere Performance</li>
-                                <li>Automatisierte Software-Installation via Chocolatey</li>
-                                <li>Backup-Routinen für wichtige Systemdaten</li>
-                                <li>Benutzerfreundliche Menüführung für einfache Bedienung</li>
-                            </ul>
-                            
-                            <div class="tech-stack">
-                                <h4>Verwendete Technologien:</h4>
-                                <ul>
-                                    <li>Windows Batch-Scripting</li>
-                                    <li>PowerShell-Integration</li>
-                                    <li>Windows Registry Management</li>
-                                    <li>Chocolatey Package Manager</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </article>
         </section>
 
-        <section id="kenntnisse">
-            <h2>Technische Kenntnisse</h2>
-            <ul>
-                <li>Programmiersprachen: C#, JavaScript, HTML5, CSS3</li>
-                <li>Frameworks: Unity, Node.js</li>
-                <li>Entwicklungstools: Git, Visual Studio, VS Code</li>
-                <li>3D-Modellierung: Blender</li>
-            </ul>
-        </section>
-
-        <section id="kontakt">
-            <h2>Kontakt</h2>
-            <p>E-Mail: leanmele1@gmail.com</p>
-            <p>Telefon: 772615482</p>
-        </section>
-
-        <section id="web-skills">
-            <h2>Web Development Showcase</h2>
-            <div class="skills-showcase">
-                <div class="showcase-card" data-tilt>
-                    <div class="card-header">
-                        <div class="color-dot red"></div>
-                        <div class="color-dot yellow"></div>
-                        <div class="color-dot green"></div>
-                    </div>
-                    <div class="code-preview">
-                        <pre><code>
-.skills-showcase {
-    display: flex;
-    transform: rotate(2deg);
-}
-                        </code></pre>
-                    </div>
-                    <div class="card-footer">
-                        <span>CSS Animations</span>
-                    </div>
+        <section id="kenntnisse" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technische <span class="text-gradient">Kenntnisse</span></h2>
+                    <p>Meine Fähigkeiten und Technologien, mit denen ich arbeite</p>
                 </div>
                 
-                <div class="interactive-demo">
-                    <div class="theme-switcher">
-                        <button class="theme-btn light active">Light</button>
-                        <button class="theme-btn dark">Dark</button>
-                    </div>
-                    <div class="responsive-preview">
-                        <div class="device-frame">
-                            <div class="device-content">
-                                <h3>Responsive Design</h3>
-                                <p>Resize to see magic happen!</p>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"></path><path d="M2 20h20"></path><path d="M14 12v.01"></path></svg>
+                        </div>
+                        <h3>Programmierung</h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-level="85">
+                                <span class="skill-name">C#</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-level="80">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-level="90">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-level="75">
+                                <span class="skill-name">React Native</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        </div>
+                        <h3>System Administration</h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-level="70">
+                                <span class="skill-name">Windows Server</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-level="85">
+                                <span class="skill-name">QNAP NAS</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-level="80">
+                                <span class="skill-name">Android Customization</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-level="75">
+                                <span class="skill-name">Backup-Systeme</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <h3>Tools & Entwicklungsumgebungen</h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-level="85">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-level="90">
+                                <span class="skill-name">Visual Studio & VS Code</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-level="75">
+                                <span class="skill-name">Blender</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-level="80">
+                                <span class="skill-name">Prozess-Optimierung</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Kontakt <span class="text-gradient">aufnehmen</span></h2>
+                    <p>Interesse an einer Zusammenarbeit? Kontaktieren Sie mich!</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-card" data-tilt>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div>
+                                    <h4>E-Mail</h4>
+                                    <p><a href="mailto:lean.mele@example.com">leanmele1@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4>Telefon</h4>
+                                    <p><a href="tel:772615482">772 615 482</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-Mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Nachricht</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -220,9 +295,223 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Lean Mele - Portfolio</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">LM</div>
+                <p class="copyright">&copy; <span id="year"></span> Lean Mele - Portfolio</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Templates -->
+    <template id="todo-details">
+        <div class="project-details-content">
+            <h3>ToDo-Liste Android App</h3>
+            <div class="project-gallery">
+                <img src="images/todo-app.jpg" alt="ToDo-Liste App Screenshot" class="gallery-main" onerror="this.src='/placeholder.svg?height=400&width=700'">
+            </div>
+            <div class="project-description">
+                <p>Eine native Android-Applikation zur effizienten Aufgabenverwaltung, entwickelt mit React Native.</p>
+                
+                <div class="features-list">
+                    <h4>Hauptfunktionen:</h4>
+                    <ul>
+                        <li>
+                            <strong>Fokussiertes Produktivitätssystem</strong>
+                            <p>Integration von Kalender und Pomodoro-Timer für effektives Zeitmanagement und bessere Work-Life-Balance</p>
+                        </li>
+                        <li>
+                            <strong>Digital Wellbeing Konzept</strong>
+                            <p>Alternative zu ablenkenden Social Media Reels durch sinnvolle Aufgabenplanung und Erfolgserlebnisse</p>
+                        </li>
+                        <li>
+                            <strong>Personalisierte Nutzererfahrung</strong>
+                            <p>Individuelles Profilsystem mit Fortschrittsanalyse und persönlichen Produktivitätsstatistiken</p>
+                        </li>
+                        <li>
+                            <strong>Motivationssystem</strong>
+                            <p>Gamifizierte Elemente und Erfolgsmetriken für langfristige Nutzermotivation</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tech-stack">
+                    <h4>Verwendete Technologien:</h4>
+                    <div class="tech-tags">
+                        <span>React Native</span>
+                        <span>JavaScript</span>
+                        <span>Android SDK</span>
+                        <span>Async Storage</span>
+                        <span>Native Modules</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="skyland-details">
+        <div class="project-details-content">
+            <h3>Skyland Odyssey - Meine Reise in die Spieleentwicklung</h3>
+            <div class="project-gallery">
+                <img src="images/skyland.jpg" alt="Skyland Odyssey Screenshot" class="gallery-main" onerror="this.src='/placeholder.svg?height=400&width=700'">
+                <div class="gallery-thumbnails">
+                    <img src="images/skyland2.jpg" alt="Skyland Odyssey Additional View" onerror="this.src='/placeholder.svg?height=100&width=150'">
+                    <img src="images/skyland3.jpg" alt="Skyland Odyssey Gameplay" onerror="this.src='/placeholder.svg?height=100&width=150'">
+                    <img src="images/skyland4.jpg" alt="Skyland Odyssey Environment" onerror="this.src='/placeholder.svg?height=100&width=150'">
+                </div>
+            </div>
+            <div class="project-description">
+                <p>Tauche ein in die schwebenden Inseln von Skyland Odyssey, einem 3D-Abenteuer, das meine Leidenschaft für Spieleentwicklung widerspiegelt.</p>
+                
+                <div class="features-list">
+                    <h4>Von der Idee zum virtuellen Universum</h4>
+                    <p>Mit Leidenschaft und Neugierde begann ich dieses Projekt, das sich zu einer fesselnden Reise entwickelte. Jede Zeile Code und jedes 3D-Modell erzählt eine Geschichte von Entdeckung.</p>
+                    
+                    <h4>Technische Höhepunkte:</h4>
+                    <ul>
+                        <li>
+                            <strong>Innovative Spielmechanik</strong>
+                            <p>Eigenständig in C# entwickelt</p>
+                        </li>
+                        <li>
+                            <strong>Atemberaubende Visuals</strong>
+                            <p>Mit Blender erschuf ich eine einzigartige 3D-Welt</p>
+                        </li>
+                        <li>
+                            <strong>Physik und Atmosphäre</strong>
+                            <p>Realistische Interaktionen und Soundeffekte</p>
+                        </li>
+                        <li>
+                            <strong>Optimierte Performance</strong>
+                            <p>Flüssiges Spielerlebnis auf verschiedenen Systemen</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tech-stack">
+                    <h4>Verwendete Technologien:</h4>
+                    <div class="tech-tags">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Blender</span>
+                        <span>3D Modeling</span>
+                        <span>Game Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="pc-details">
+        <div class="project-details-content">
+            <h3>Custom Gaming PC Build</h3>
+            <div class="project-gallery">
+                <img src="images/pc-build1.jpg" alt="Custom PC Build Hauptansicht" class="gallery-main" onerror="this.src='/placeholder.svg?height=400&width=700'">
+                <div class="gallery-thumbnails">
+                    <img src="images/pc-build2.jpg" alt="PC Komponenten" onerror="this.src='/placeholder.svg?height=100&width=150'">
+                    <img src="images/pc-build3.jpg" alt="Fertiger PC mit RGB" onerror="this.src='/placeholder.svg?height=100&width=150'">
+                </div>
+            </div>
+            <div class="project-description">
+                <p>Als 13-jähriger Informatiker startete ich mein eigenes PC-Projekt, das sowohl herausfordernd als auch unglaublich lohnend war.</p>
+                
+                <div class="features-list">
+                    <h4>Meine Build-Journey</h4>
+                    <div class="journey-steps">
+                        <div class="journey-step">
+                            <h5>1. Vorbereitung</h5>
+                            <p>Sorgfältige Auswahl aller Komponenten: leistungsstarker Prozessor, ausreichend RAM, schnelle SSD fürs Betriebssystem, zusätzliche HDD für Spiele und eine hochwertige Grafikkarte für anspruchsvolle Anwendungen.</p>
+                        </div>
+                        
+                        <div class="journey-step">
+                            <h5>2. Zusammenbau</h5>
+                            <p>Systematischer Aufbau: Installation von Netzteil, Prozessor mit Kühler auf dem Mainboard, RAM-Einbau, Mainboard-Montage im Gehäuse, Verkabelung und Installation der Grafikkarte.</p>
+                        </div>
+                        
+                        <div class="journey-step">
+                            <h5>3. Optimierung</h5>
+                            <p>Erfolgreiche Problemlösung durch BIOS-Anpassungen, Betriebssystem-Setup und Treiber-Installation für einen reibungslosen Betrieb.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-stack">
+                    <h4>Hardware-Komponenten:</h4>
+                    <div class="tech-tags">
+                        <span>AMD Ryzen</span>
+                        <span>NVIDIA GPU</span>
+                        <span>SSD/HDD</span>
+                        <span>Custom Cooling</span>
+                        <span>RGB Lighting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="tools-details">
+        <div class="project-details-content">
+            <h3>System-Optimierungs-Tools</h3>
+            <div class="project-gallery">
+                <img src="/placeholder.svg?height=400&width=700" alt="System-Optimierungs-Tools Screenshot" class="gallery-main">
+            </div>
+            <div class="project-description">
+                <p>Eine Sammlung selbst entwickelter Batch-Skripte zur Automatisierung und Optimierung von Windows-Systemen.</p>
+                
+                <div class="features-list">
+                    <h4>Hauptfunktionen:</h4>
+                    <ul>
+                        <li>
+                            <strong>Automatische Systemreinigung und Wartung</strong>
+                            <p>Regelmäßige Bereinigung temporärer Dateien und Systemoptimierung</p>
+                        </li>
+                        <li>
+                            <strong>Intelligentes Prozess-Management</strong>
+                            <p>Überwachung und Optimierung von Systemprozessen für bessere Performance</p>
+                        </li>
+                        <li>
+                            <strong>Automatisierte Software-Installation</strong>
+                            <p>Schnelle Einrichtung neuer Systeme mit vorkonfigurierten Anwendungen</p>
+                        </li>
+                        <li>
+                            <strong>Backup-Routinen</strong>
+                            <p>Automatisierte Sicherung wichtiger Systemdaten und Benutzerfiles</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tech-stack">
+                    <h4>Verwendete Technologien:</h4>
+                    <div class="tech-tags">
+                        <span>Windows Batch</span>
+                        <span>PowerShell</span>
+                        <span>Registry Management</span>
+                        <span>Chocolatey</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
     <script src="script.js"></script>
 </body>
-</body>
 </html>
+
